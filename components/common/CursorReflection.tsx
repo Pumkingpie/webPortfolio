@@ -6,7 +6,22 @@ const CursorReflection = () => {
     const cursorY = useMotionValue(0);
     const controls = useAnimation();
     const [isClicked, setIsClicked] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
+
+    // Detectar si es dispositivo móvil
+    useEffect(() => {
+        const checkMobile = () => {
+            const isMobileDevice = window.innerWidth <= 768 ||
+                /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            setIsMobile(isMobileDevice);
+        };
+
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
 
     useEffect(() => {
         let animationFrame: number;
@@ -39,6 +54,11 @@ const CursorReflection = () => {
         window.addEventListener('mousedown', handleClick);
         return () => window.removeEventListener('mousedown', handleClick);
     }, [controls]);
+
+    // No renderizar en dispositivos móviles
+    if (isMobile) {
+        return null;
+    }
 
     return (
         <motion.div
