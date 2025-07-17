@@ -7,8 +7,8 @@ export default function Home() {
       <div>
         <Hero />
         <About />
-        <Portfolio />
         <Skills />
+        <Portfolio />
         <Contact />
       </div>
     </main>
