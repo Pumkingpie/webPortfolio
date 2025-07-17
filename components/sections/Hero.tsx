@@ -64,7 +64,7 @@ function Hero() {
               transition={transitionConfig}
             >
               <SplitText delay={0.2} className="text-white" rainbow={false}>
-                DesataTu Creatividad con Soluciones
+                Desata Tu Creatividad con Soluciones
               </SplitText>{' '}
               <motion.span
                 className="text-[#6765F0]"

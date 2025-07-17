@@ -45,9 +45,9 @@ function Portfolio() {
       id: 5,
       title: "Buscador de Recetas",
       description: "Busca y guarda tus recetas favoritas con seguimiento de ingredientes",
-      image: "https://picsum.photos/600/400?random=5",
-      tags: ["React", "Redux", "Spoonacular API"],
-      demoLink: "https://demo.example.com",
+      image: "/recetas.webp",
+      tags: ["React", "Redux", "TheMealDB API", "TypeScript"],
+      demoLink: "https://buscador-recetas-eight.vercel.app/",
       codeLink: "https://github.com/example/project"
     },
     {
