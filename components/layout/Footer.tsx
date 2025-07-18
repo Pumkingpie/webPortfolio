@@ -2,7 +2,7 @@ import React from "react";
 
 export function Footer() {
     return (
-        <footer className="w-full bg-[#0C0C2A]/80 backdrop-blur-sm border-t border-[#4F46CF] text-white py-8 mt-8">
+        <footer className="w-full bg-slate-900/80 backdrop-blur-sm border-t border-purple-500 to-pink-500 text-white py-8 mt-8">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 gap-4">
                 <span className="text-sm">&copy; {new Date().getFullYear()} Santiago Martinez. Todos los derechos reservados.</span>
                 <div className="flex gap-4">
@@ -11,7 +11,7 @@ export function Footer() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="LinkedIn"
-                        className="flex items-center gap-2 hover:text-[#6765F0] transition-colors duration-200"
+                        className="flex items-center gap-2 hover:text-pink-500  transition-colors duration-200"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

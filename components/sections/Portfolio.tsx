@@ -92,7 +92,7 @@ function Portfolio() {
                   {project.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className="px-2 py-1  bg-gradient-to-r from-pink-500 to-purple-600  text-white text-sm rounded-full "
+                      className="px-2 py-1  bg-pink-600  text-white text-sm rounded-full "
                     >
                       {tag}
                     </span>
@@ -102,14 +102,14 @@ function Portfolio() {
                   <OptimizedLink
                     href={project.demoLink}
                     variant="button"
-                    className="flex-1 bg-purple-900 hover:bg-purple-800 text-white"
+                    className="flex-1 bg-purple-900 hover:bg-gradient-to-r from-pink-500 to-purple-600 text-white"
                   >
                     Demo en Vivo
                   </OptimizedLink>
                   <OptimizedLink
                     href={project.codeLink}
                     variant="button"
-                    className="flex-1 bg-purple-900 hover:bg-purple-800 text-white"
+                    className="flex-1 bg-purple-900 hover:bg-gradient-to-l from-pink-500 to-purple-600 text-white"
                   >
                     Ver Código
                   </OptimizedLink>

@@ -28,7 +28,7 @@ function About() {
                 <li>Base de Datos: MySQL</li>
                 <li>Otros: Git, APIs RESTful, Metodologías Ágiles</li>
               </ul>
-              <OptimizedLink href="/cv.pdf" variant="button" className="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:brightness-110 transition-all duration-300">
+              <OptimizedLink href="/cv.pdf" variant="button" className="bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:brightness-110 transition-all duration-300">
                 Descargar CV
               </OptimizedLink>
             </div>

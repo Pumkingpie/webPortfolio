@@ -5,7 +5,7 @@ export const experienceData = [
     {
         title: "Técnico en Informática, egresado del Bachillerato Técnico.",
         company: "Colegio Técnico Nacional de Asunción",
-        period: "2021 - 2024",
+        period: "2022 - 2024",
         description: "Formación técnica en Ciencias de la Computación con enfoque en Desarrollo Web y programación.",
         icon: GraduationCap,
     },

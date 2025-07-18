@@ -106,7 +106,7 @@ function Hero() {
                 className="bg-purple-900 text-white px-8 py-3 text-lg font-semibold transition-all duration-300 relative overflow-hidden group"
               >
                 <span className="relative z-10">Ver Trabajos</span>
-                <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-[#a21caf] to-[#ec4899]" style={{ zIndex: 0 }} />
+                <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-pink-500 to-purple-600" style={{ zIndex: 0 }} />
               </OptimizedLink>
               <OptimizedLink
                 href="#about"
@@ -114,7 +114,7 @@ function Hero() {
                 className="border-purple-900 border-2 px-8 py-3 text-lg font-semibold transition-all duration-300 relative overflow-hidden group"
               >
                 <span className="relative z-10 group-hover:text-white transition-colors duration-300">Sobre Mí</span>
-                <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-[#a21caf] to-[#ec4899]" style={{ zIndex: 0 }} />
+                <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-l from-pink-500 to-purple-600" style={{ zIndex: 0 }} />
               </OptimizedLink>
             </motion.div>
 
