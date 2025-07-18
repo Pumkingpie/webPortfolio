@@ -21,7 +21,7 @@ export function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="fixed top-0 w-full z-50 bg-[#0C0C2A]/80 backdrop-blur-sm border-b border-[#4F46CF]"
+      className="fixed top-0 w-full z-50 bg-slate-900/80 backdrop-blur-sm border-b border-purple-500 to-pink-500"
     >
       <div className="w-full px-6 py-4 flex items-center justify-between">
         {/* Logo - Left */}
@@ -29,9 +29,9 @@ export function Navbar() {
           <OptimizedLink
             href="/"
             variant="button"
-            className="font-semibold text-xl text-white flex items-center space-x-2 hover:text-[#A1A9FF] transition-colors"
+            className="font-semibold text-xl text-purple-400 flex items-center space-x-2 hover:text-white transition-colors"
           >
-            <div className="w-8 h-8 bg-gradient-to-br from-[#6765F0] to-[#5B56E0] rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">SM</span>
             </div>
             <span>SM.Dev</span>
@@ -43,6 +43,7 @@ export function Navbar() {
           <div className="flex items-center space-x-10 mr-23">
             <NavLink href="#about">Sobre Mí</NavLink>
             <NavLink href="#work">Trabajos</NavLink>
+            <NavLink href="#trayectoria">Trayectoria</NavLink>
             <NavLink href="#skills">Habilidades</NavLink>
             <NavLink href="#contact">Contacto</NavLink>
           </div>
@@ -51,14 +52,14 @@ export function Navbar() {
         {/* Desktop Actions - Right */}
         <div className="hidden lg:flex items-center space-x-4 flex-shrink-0">
           {/* Desktop Bot */}
-          <div className="w-10 h-10 bg-gradient-to-br from-[#6765F0] to-[#5B56E0] rounded-lg flex items-center justify-center">
+          <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
             <Bot className="w-8 h-8 text-white" />
           </div>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden p-2 rounded-md hover:bg-[#27246C]/20 text-white transition-colors z-50"
+          className="lg:hidden p-2 rounded-md hover:bg-purple-700/20 text-purple-400 transition-colors z-50"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -96,7 +97,7 @@ export function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="lg:hidden bg-[#0C0C2A]/95 backdrop-blur-sm border-t border-[#4F46CF]/50"
+            className="lg:hidden bg-slate-900/95 backdrop-blur-sm border-t border-purple-500/50"
           >
             <div className="px-6 py-6 space-y-6">
               {/* Navigation Links */}
@@ -116,14 +117,14 @@ export function Navbar() {
               </div>
 
               {/* Mobile Actions */}
-              <div className="space-y-4 pt-4 border-t border-[#4F46CF]/30">
+              <div className="space-y-4 pt-4 border-t border-purple-500/30">
                 {/* Eliminar toggle de idioma */}
                 {/* Theme Toggle */}
                 {isClient && (
                   <div className="flex items-center justify-between">
-                    <span className="text-[#A1A9FF] text-sm font-medium">Tema</span>
+                    <span className="text-purple-400 text-sm font-medium">Tema</span>
                     <button
-                      className="p-2 rounded-md hover:bg-[#27246C]/20 text-white transition-colors"
+                      className="p-2 rounded-md hover:bg-purple-700/20 text-purple-400 transition-colors"
                       onClick={() => setIsDark(!isDark)}
                     >
                       {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
@@ -135,7 +136,7 @@ export function Navbar() {
                 <div className="pt-2">
                   <OptimizedLink
                     href="#contact"
-                    className="flex items-center justify-center space-x-3 text-[#6765F0] hover:text-white transition-colors py-3 text-lg font-medium"
+                    className="flex items-center justify-center space-x-3 text-purple-500 hover:text-white transition-colors py-3 text-lg font-medium"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <Bot className="w-8 h-8" />
@@ -155,10 +156,10 @@ function NavLink({ href, children }: { href: string; children: React.ReactNode }
   return (
     <OptimizedLink
       href={href}
-      className="text-[#A1A9FF] hover:text-white transition-colors relative group font-medium"
+      className="text-purple-400 hover:text-white transition-colors relative group font-medium"
     >
       {children}
-      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#6765F0] transition-all duration-300 group-hover:w-full" />
+      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-500 transition-all duration-300 group-hover:w-full" />
     </OptimizedLink>
   )
 }
@@ -172,7 +173,7 @@ function MobileNavLink({ href, children, onClick }: { href: string; children: Re
     >
       <OptimizedLink
         href={href}
-        className="block text-[#A1A9FF] hover:text-white transition-colors font-medium py-3 text-lg border-b border-[#4F46CF]/20 hover:border-[#6765F0]/40"
+        className="block text-purple-400 hover:text-white transition-colors font-medium py-3 text-lg border-b border-purple-500/20 hover:border-purple-500/40"
         onClick={onClick}
       >
         {children}

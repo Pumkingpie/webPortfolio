@@ -3,6 +3,7 @@ import { Navbar, Footer } from "@/components/layout";
 import { NavigationProgress } from "@/components/common";
 import './globals.css';
 import { Inter } from 'next/font/google';
+import type { Metadata } from 'next';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -14,10 +15,27 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-export const metadata = {
-  title: 'Santiago Martinez - Desarrollador Full Stack',
-  description: 'Portafolio de Santiago Martinez, desarrollador full-stack',
-  keywords: ['React', 'Next.js', 'TypeScript', 'Full Stack'],
+export const metadata: Metadata = {
+  title: "Santiago Martinez - Full Stack Developer",
+  description:
+    "Portafolio profesional de Santiago Martinez, Full Stack Developer especializado en React, Node.js y TypeScript",
+  keywords: ["desarrollador", "full stack", "react", "nodejs", "typescript", "portfolio"],
+  authors: [{ name: "Santiago Martinez" }],
+  creator: "Santiago Martinez",
+  openGraph: {
+    type: "website",
+    locale: "es_ES",
+    url: "https://santiagomartinez.dev",
+    title: "Santiago Martinez - Full Stack Developer",
+    description: "Portafolio profesional de Santiago Martinez",
+    siteName: "Santiago Martinez Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Santiago Martinez - Full Stack Developer",
+    description: "Portafolio profesional de Santiago Martinez",
+    creator: "@santiagomartinez",
+  },
 };
 
 export const viewport = {

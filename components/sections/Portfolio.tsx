@@ -87,12 +87,12 @@ function Portfolio() {
                   />
                 </div>
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-[#A1A9FF] mb-4">{project.description}</p>
+                <p className="text-gray-200 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className="px-2 py-1 bg-[#4F46CF] text-white text-sm rounded-full "
+                      className="px-2 py-1  bg-gradient-to-r from-pink-500 to-purple-600  text-white text-sm rounded-full "
                     >
                       {tag}
                     </span>
@@ -102,14 +102,14 @@ function Portfolio() {
                   <OptimizedLink
                     href={project.demoLink}
                     variant="button"
-                    className="flex-1 bg-[#5B56E0] hover:bg-[#6765F0] text-white"
+                    className="flex-1 bg-purple-900 hover:bg-purple-800 text-white"
                   >
                     Demo en Vivo
                   </OptimizedLink>
                   <OptimizedLink
                     href={project.codeLink}
                     variant="button"
-                    className="flex-1 bg-[#27246C] hover:bg-[#21205A] text-white"
+                    className="flex-1 bg-purple-900 hover:bg-purple-800 text-white"
                   >
                     Ver Código
                   </OptimizedLink>

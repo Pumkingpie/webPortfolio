@@ -31,7 +31,7 @@ export function RoboAnimation() {
             >
                 <div className="relative">
                     <motion.div
-                        className="absolute -inset-6 bg-[#6765F0]/20 rounded-full blur-xl"
+                        className="absolute -inset-6 bg-[#ee2a7b]/20 rounded-full blur-xl"
                         animate={{
                             scale: [1, 1.3, 1],
                             opacity: [0.3, 0.6, 0.3],
@@ -52,7 +52,7 @@ export function RoboAnimation() {
                             ease: "easeInOut",
                         }}
                     >
-                        <Bot className="w-20 h-20 text-[#6765F0] drop-shadow-lg" />
+                        <Bot className="w-20 h-20 text-[#a21caf] drop-shadow-lg" />
                     </motion.div>
                 </div>
             </motion.div>
@@ -72,7 +72,7 @@ export function RoboAnimation() {
             >
                 <div className="relative">
                     <motion.div
-                        className="absolute -inset-4 bg-[#5B56E0]/25 rounded-full blur-lg"
+                        className="absolute -inset-4 bg-[#ec4899]/25 rounded-full blur-lg"
                         animate={{
                             scale: [1, 1.2, 1],
                             opacity: [0.3, 0.7, 0.3],
@@ -95,7 +95,7 @@ export function RoboAnimation() {
                             delay: 1,
                         }}
                     >
-                        <Bot className="w-14 h-14 text-[#5B56E0] drop-shadow-lg" />
+                        <Bot className="w-14 h-14 text-[#a21caf] drop-shadow-lg" />
                     </motion.div>
                 </div>
             </motion.div>
