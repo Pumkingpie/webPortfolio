@@ -34,8 +34,12 @@ function Experiencie() {
                             viewport={{ once: true }}
                             className={`relative flex items-center mb-12 ${index % 2 === 0 ? "justify-start" : "justify-end"}`}
                         >
+                            {/* Pin centrado y alineado con la barra en móvil */}
+                            <div className="md:hidden absolute left-1/2 -top-2 transform -translate-x-1/2 z-10">
+                                <div className="w-4 h-4 bg-purple-500 rounded-full border-4 border-slate-900"></div>
+                            </div>
                             <div className={`w-full md:w-5/12 ${index % 2 === 0 ? "pr-8" : "pl-8"}`}>
-                                <Card className="bg-slate-900/80 border border-purple-700/30 shadow-lg">
+                                <Card className="bg-slate-900/80 border border-purple-700/30 shadow-lg mt-4 md:mt-0">
                                     <CardHeader>
                                         <div className="flex items-center mb-2">
                                             <div className="p-2 bg-purple-500 rounded-lg mr-3">
@@ -55,8 +59,8 @@ function Experiencie() {
                                     </CardContent>
                                 </Card>
                             </div>
-
-                            <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-slate-900"></div>
+                            {/* Pin solo en md+ (posición original) */}
+                            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-slate-900"></div>
                         </motion.div>
                     ))}
                 </div>
