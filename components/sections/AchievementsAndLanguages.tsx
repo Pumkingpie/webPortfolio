@@ -27,30 +27,35 @@ function AchievementsAndLanguages() {
                         </CardHeader>
                         <div className="p-6 pt-3">
                             <ul className="list-disc list-inside space-y-2">
-                                <li><Badge>🇪🇸 Español (Nativo)</Badge></li>
+                                <li>
+                                    <Badge>
+                                        🇪🇸 Español (Nativo)
+                                    </Badge>
+                                </li>
                                 <li>
                                     <a
                                         href="https://cert.efset.org/es/A5H4DB"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-flex items-center gap-1 hover:underline"
+                                        className="inline-block w-fit"
                                     >
-                                        <Badge >
+                                        <Badge className="block break-words whitespace-normal max-w-full gap-2">
+                                            <span className="flex items-center gap-2 flex-wrap"></span>
                                             🇬🇧 Inglés (B1 - Intermedio, certificado EF SET)
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                className="w-4 h-4 text-purple-400 transition-colors group-hover:text-white"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke="currentColor"
+                                                strokeWidth={2}
+                                            >
+                                                <title>Ver certificado</title>
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+                                                <polyline points="15 3 21 3 21 9" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+                                                <line x1="10" y1="14" x2="21" y2="3" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
                                         </Badge>
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            className="w-4 h-4 text-purple-400"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                            strokeWidth={2}
-                                        >
-                                            <title>Ver certificado</title>
-                                            <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
-                                            <polyline points="15 3 21 3 21 9" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
-                                            <line x1="10" y1="14" x2="21" y2="3" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
                                     </a>
                                 </li>
                             </ul>
